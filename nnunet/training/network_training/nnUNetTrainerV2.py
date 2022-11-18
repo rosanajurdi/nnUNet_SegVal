@@ -334,6 +334,10 @@ class nnUNetTrainerV2(nnUNetTrainer):
         self.dataset_tr = OrderedDict()
         for i in tr_keys:
             self.dataset_tr[i] = self.dataset[i]
+            print("ROSANA:self.dataset_tr[i]")
+            print(self.dataset_tr[i])
+            print("ROSANA:self.dataset_tr[i]")
+            print(self.dataset[i])
         self.dataset_val = OrderedDict()
         for i in val_keys:
             self.dataset_val[i] = self.dataset[i]
