@@ -1,3 +1,11 @@
+# Files and folders specific to machine
+
+nnUNet_raw_data_base/
+nnUNet_preprocessed/
+nnUNet_trained_models/
+
+.bachrc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

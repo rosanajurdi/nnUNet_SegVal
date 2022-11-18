@@ -287,6 +287,8 @@ class nnUNetTrainerV2(nnUNetTrainer):
             tr_keys = val_keys = list(self.dataset.keys())
         else:
             splits_file = join(self.dataset_directory, "splits_final.pkl")
+            print("ROSANA:")
+            print(self.dataset_directory)
 
             # if the split file does not exist we need to create it
             if not isfile(splits_file):

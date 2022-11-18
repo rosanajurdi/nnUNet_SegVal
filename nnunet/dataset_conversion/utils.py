@@ -18,9 +18,10 @@ from typing import Tuple
 import numpy as np
 from batchgenerators.utilities.file_and_folder_operations import *
 
-
 def get_identifiers_from_splitted_files(folder: str):
-    uniques = np.unique([i[:-12] for i in subfiles(folder, suffix='.nii.gz', join=False)])
+    # changed to accomodate sutumized splits of msd data
+    #uniques = np.unique([i[:-12] for i in subfiles(folder, suffix='.nii.gz', join=False)])
+    uniques = [i.split('.nii.gz')[0] for i in subfiles(folder, suffix='.nii.gz', join=False)]
     return uniques
 
 
