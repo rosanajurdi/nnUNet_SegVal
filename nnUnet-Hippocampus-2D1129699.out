@@ -1,0 +1,123 @@
++ cd /gpfsdswork/projects/rech/pzi/uju59ys/nnUNet
++ module purge
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash purge
++ eval unset '_LMFILES__modshare;
+unset' 'LOADEDMODULES_modshare;
+unset' 'MODULES_LMCONFLICT_modshare;
+unset' '_LMFILES_;
+unset' 'LOADEDMODULES;
+unset' 'MODULES_LMCONFLICT;
+test' '0;'
+++ unset _LMFILES__modshare
+++ unset LOADEDMODULES_modshare
+++ unset MODULES_LMCONFLICT_modshare
+++ unset _LMFILES_
+++ unset LOADEDMODULES
+++ unset MODULES_LMCONFLICT
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ conda activate nnUnet_2
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
++ srun nnUNet_plan_and_preprocess -t 4
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+nnUNet_raw_data_base is not defined and nnU-Net can only be used on data for which preprocessed files are already present on your system. nnU-Net cannot be used for experiment planning and preprocessing like this. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up properly.
+nnUNet_preprocessed is not defined and nnU-Net can not be used for preprocessing or training. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up.
+RESULTS_FOLDER is not defined and nnU-Net cannot be used for training or inference. If this is not intended behavior, please read documentation/setting_up_paths.md for information on how to set this up.
+Traceback (most recent call last):
+  File "/linkhome/rech/gencme01/uju59ys/.conda/envs/nnUnet_2/bin/nnUNet_plan_and_preprocess", line 33, in <module>
+    sys.exit(load_entry_point('nnunet', 'console_scripts', 'nnUNet_plan_and_preprocess')())
+  File "/gpfsdswork/projects/rech/pzi/uju59ys/nnUNet/nnunet/experiment_planning/nnUNet_plan_and_preprocess.py", line 102, in main
+    task_name = convert_id_to_task_name(i)
+  File "/gpfsdswork/projects/rech/pzi/uju59ys/nnUNet/nnunet/utilities/task_name_id_conversion.py", line 51, in convert_id_to_task_name
+    raise RuntimeError("Could not find a task with the ID %d. Make sure the requested task ID exists and that "
+RuntimeError: Could not find a task with the ID 4. Make sure the requested task ID exists and that nnU-Net knows where raw and preprocessed data are located (see Documentation - Installation). Here are your currently defined folders:
+nnUNet_preprocessed=None
+RESULTS_FOLDER=None
+nnUNet_raw_data_base=None
+If something is not right, adapt your environemnt variables.
+srun: error: r6i5n8: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1129699.0
++ srun nnUNet_train 2d nnUNetTrainerV2 4 0
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+nnUNet_raw_data_base is not defined and nnU-Net can only be used on data for which preprocessed files are already present on your system. nnU-Net cannot be used for experiment planning and preprocessing like this. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up properly.
+nnUNet_preprocessed is not defined and nnU-Net can not be used for preprocessing or training. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up.
+RESULTS_FOLDER is not defined and nnU-Net cannot be used for training or inference. If this is not intended behavior, please read documentation/setting_up_paths.md for information on how to set this up.
+Traceback (most recent call last):
+  File "/linkhome/rech/gencme01/uju59ys/.conda/envs/nnUnet_2/bin/nnUNet_train", line 33, in <module>
+    sys.exit(load_entry_point('nnunet', 'console_scripts', 'nnUNet_train')())
+  File "/gpfsdswork/projects/rech/pzi/uju59ys/nnUNet/nnunet/run/run_training.py", line 120, in main
+    task = convert_id_to_task_name(task_id)
+  File "/gpfsdswork/projects/rech/pzi/uju59ys/nnUNet/nnunet/utilities/task_name_id_conversion.py", line 51, in convert_id_to_task_name
+    raise RuntimeError("Could not find a task with the ID %d. Make sure the requested task ID exists and that "
+RuntimeError: Could not find a task with the ID 4. Make sure the requested task ID exists and that nnU-Net knows where raw and preprocessed data are located (see Documentation - Installation). Here are your currently defined folders:
+nnUNet_preprocessed=None
+RESULTS_FOLDER=None
+nnUNet_raw_data_base=None
+If something is not right, adapt your environemnt variables.
+srun: error: r6i5n8: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1129699.1
++ wait

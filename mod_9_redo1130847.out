@@ -1,0 +1,3256 @@
++ cd /gpfsdswork/projects/rech/pzi/uju59ys/nnUNet
++ module purge
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash purge
++ eval unset '_LMFILES__modshare;
+unset' 'LOADEDMODULES_modshare;
+unset' 'MODULES_LMCONFLICT_modshare;
+unset' '_LMFILES_;
+unset' 'LOADEDMODULES;
+unset' 'MODULES_LMCONFLICT;
+test' '0;'
+++ unset _LMFILES__modshare
+++ unset LOADEDMODULES_modshare
+++ unset MODULES_LMCONFLICT_modshare
+++ unset _LMFILES_
+++ unset LOADEDMODULES
+++ unset MODULES_LMCONFLICT
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ conda activate nnUnet_2
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
++ srun nnUNet_plan_and_preprocess -t 1
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+BRATS_066
+BRATS_068
+BRATS_079
+BRATS_085
+BRATS_087
+BRATS_160
+BRATS_164
+BRATS_168
+BRATS_172
+BRATS_174
+BRATS_332
+BRATS_334
+BRATS_338
+BRATS_340
+BRATS_341
+BRATS_004
+BRATS_013
+BRATS_016
+BRATS_017
+BRATS_019
+BRATS_111
+BRATS_115
+BRATS_116
+BRATS_117
+BRATS_119
+BRATS_226
+BRATS_231
+BRATS_240
+BRATS_241
+BRATS_245
+BRATS_367
+BRATS_369
+BRATS_379
+BRATS_382
+BRATS_385
+BRATS_101
+BRATS_103
+BRATS_104
+BRATS_105
+BRATS_107
+BRATS_202
+BRATS_210
+BRATS_216
+BRATS_218
+BRATS_224
+BRATS_345
+BRATS_347
+BRATS_353
+BRATS_363
+BRATS_364
+BRATS_023
+BRATS_025
+BRATS_027
+BRATS_031
+BRATS_032
+BRATS_121
+BRATS_123
+BRATS_125
+BRATS_127
+BRATS_131
+BRATS_297
+BRATS_300
+BRATS_304
+BRATS_306
+BRATS_308
+BRATS_453
+BRATS_457
+BRATS_461
+BRATS_467
+BRATS_472
+BRATS_035
+BRATS_037
+BRATS_039
+BRATS_040
+BRATS_042
+BRATS_132
+BRATS_133
+BRATS_140
+BRATS_143
+BRATS_146
+BRATS_267
+BRATS_269
+BRATS_275
+BRATS_277
+BRATS_284
+BRATS_386
+BRATS_396
+BRATS_397
+BRATS_404
+BRATS_416
+BRATS_094
+BRATS_095
+BRATS_097
+BRATS_098
+BRATS_099
+BRATS_175
+BRATS_181
+BRATS_183
+BRATS_185
+BRATS_186
+BRATS_286
+BRATS_290
+BRATS_292
+BRATS_294
+BRATS_296
+BRATS_443
+BRATS_447
+BRATS_448
+BRATS_449
+BRATS_451
+BRATS_043
+BRATS_046
+BRATS_048
+BRATS_050
+BRATS_051
+BRATS_148
+BRATS_151
+BRATS_152
+BRATS_154
+BRATS_156
+BRATS_251
+BRATS_252
+BRATS_257
+BRATS_259
+BRATS_263
+BRATS_420
+BRATS_422
+BRATS_426
+BRATS_428
+BRATS_438
+BRATS_052
+BRATS_054
+BRATS_056
+BRATS_058
+BRATS_064
+BRATS_187
+BRATS_189
+BRATS_191
+BRATS_193
+BRATS_198
+BRATS_310
+BRATS_314
+BRATS_323
+BRATS_324
+BRATS_326
+BRATS_473
+BRATS_475
+BRATS_477
+BRATS_482
+BRATS_484
+
+
+
+ Task001_SegVal_BrainTumor
+number of threads:  (8, 8) 
+
+using nonzero mask for normalization
+using nonzero mask for normalization
+using nonzero mask for normalization
+using nonzero mask for normalization
+Are we using the nonzero mask for normalization? OrderedDict([(0, True), (1, True), (2, True), (3, True)])
+the median shape of the dataset is  [138. 169. 138.]
+the max shape in the dataset is  [146. 187. 153.]
+the min shape in the dataset is  [119. 144. 128.]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [138. 169. 138.]
+generating configuration for 3d_fullres
+{0: {'batch_size': 2, 'num_pool_per_axis': [5, 5, 5], 'patch_size': array([128, 128, 128]), 'median_patient_size_in_voxels': array([138, 169, 138]), 'current_spacing': array([1., 1., 1.]), 'original_spacing': array([1., 1., 1.]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}
+transpose forward [0, 1, 2]
+transpose backward [0, 1, 2]
+Initializing to run preprocessing
+npz folder: ./nnUNet_raw_data_base/nnUNet_cropped_data/Task001_SegVal_BrainTumor
+output_folder: ./nnUNet_preprocessed/Task001_SegVal_BrainTumor
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 166, 153)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 166, 153)} 
+
+1 10000
+2 10000
+3 9553
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_101.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 145, 149, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 145, 149, 141)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_103.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+1 10000
+2 10000
+3 8160
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_104.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_105.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+1 10000
+2 8478
+3 2927
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_107.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 172, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 172, 136)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_202.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 170, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 170, 138)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_210.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 170, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 170, 138)} 
+
+1 10000
+2 7646
+3 7195
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_216.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 145, 181, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 145, 181, 138)} 
+
+1 10000
+2 10000
+3 4114
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_218.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 172, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 172, 138)} 
+
+1 10000
+2 1491
+3 1591
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_224.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 130)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_332.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 187, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 187, 137)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_334.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 136)} 
+
+1 10000
+2 402
+3 1412
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_338.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 174, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 174, 133)} 
+
+1 10000
+2 163
+3 1357
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_340.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 146, 178, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 146, 178, 139)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_341.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 146, 180, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 146, 180, 132)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_094.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 166, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 166, 144)} 
+
+1 10000
+2 1847
+3 3395
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_095.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 170, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 170, 143)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_097.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 164, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 164, 136)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_098.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 167, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 167, 131)} 
+
+1 10000
+2 10000
+3 6064
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_099.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+1 10000
+2 10000
+3 8394
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_148.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+1 10000
+2 10000
+3 4430
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_151.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+1 10000
+2 10000
+3 8572
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_152.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 141)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_154.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 141)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_156.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 165, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 165, 134)} 
+
+1 10000
+2 4449
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_345.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 186, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 186, 136)} 
+
+1 10000
+2 10000
+3 9075
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_347.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 131)} 
+
+1 10000
+2 901
+3 1172
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_353.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 175, 128)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 175, 128)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_363.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 185, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 185, 132)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_364.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 160, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 160, 133)} 
+
+1 10000
+2 10000
+3 8726
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_052.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+1 10000
+2 10000
+3 7414
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_054.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+1 10000
+2 4991
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_056.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+1 10000
+2 10000
+3 8334
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_058.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 164, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 164, 144)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_064.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 171, 140)} 
+
+1 10000
+2 10000
+3 3736
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_121.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+1 10000
+2 10000
+3 7387
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_123.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_125.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 158, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 158, 133)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_127.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 174, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 174, 137)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_131.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 166, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 166, 140)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_251.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 152, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 152, 132)} 
+
+1 10000
+2 5487
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_252.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 166, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 166, 134)} 
+
+1 10000
+2 4334
+3 97
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_257.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 141)} 
+
+1 10000
+2 4736
+3 14
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_259.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 139)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_263.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 160, 147)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 160, 147)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_386.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 153, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 153, 138)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_396.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 167, 134)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_397.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 168, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 168, 136)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_404.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 167, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 167, 131)} 
+
+1 10000
+2 10000
+3 3852
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_416.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 156, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 156, 129)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_004.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 180, 141)} 
+
+1 7981
+2 310
+3 4678
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_013.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 166, 149)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 166, 149)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_016.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 155, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 155, 144)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_017.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 169, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 169, 144)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_019.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 156, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 156, 132)} 
+
+1 10000
+2 5969
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_132.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 141)} 
+
+1 10000
+2 8035
+3 5818
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_133.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 168, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 168, 138)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_140.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 159, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 159, 138)} 
+
+1 10000
+2 10000
+3 1430
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_143.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 174, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 174, 137)} 
+
+1 10000
+2 10000
+3 6
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_146.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 165, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 165, 136)} 
+
+1 10000
+2 9901
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_226.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 144, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 144, 135)} 
+
+1 10000
+2 3159
+3 6823
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_231.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 158, 137)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_240.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 158, 137)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_241.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 177, 139)} 
+
+1 10000
+2 10000
+3 8697
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_245.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 179, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 179, 135)} 
+
+1 10000
+2 7469
+3 9460
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_367.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 187, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 187, 138)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_369.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 173, 141)} 
+
+1 10000
+2 4122
+3 3691
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_379.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 171, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 171, 133)} 
+
+1 10000
+2 2310
+3 9619
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_382.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 157, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 157, 129)} 
+
+1 10000
+2 2593
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_385.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 164, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 164, 150)} 
+
+1 10000
+2 3271
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_043.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 171, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 171, 139)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_046.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 170, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 170, 145)} 
+
+1 10000
+2 6028
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_048.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 140)} 
+
+1 10000
+2 7099
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_050.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 153, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 153, 138)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_051.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+1 7806
+2 672
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_175.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 160, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 160, 150)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_181.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 9315
+2 6682
+3 650
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_183.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 8594
+3 108
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_185.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 9222
+3 146
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_186.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 167, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 167, 137)} 
+
+1 10000
+2 8446
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_267.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 165, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 165, 139)} 
+
+1 10000
+2 10000
+3 4144
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_269.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 176, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 176, 136)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_275.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 169, 128)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 169, 128)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_277.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 156, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 156, 129)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_284.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 176, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 176, 140)} 
+
+1 10000
+2 1523
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_420.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 166, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 166, 142)} 
+
+1 10000
+2 9087
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_422.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 166, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 166, 141)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_426.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 156, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 156, 132)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_428.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 180, 141)} 
+
+1 9757
+2 460
+3 8858
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_438.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 171, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 171, 138)} 
+
+1 10000
+2 7098
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_035.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 160, 147)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 160, 147)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_037.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 130)} 
+
+1 10000
+2 2899
+3 9907
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_039.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 159, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 159, 133)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_040.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 163, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 163, 135)} 
+
+1 10000
+2 10000
+3 352
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_042.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+1 10000
+2 8156
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_111.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 168, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 168, 139)} 
+
+1 10000
+2 10000
+3 344
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_115.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 165, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 165, 141)} 
+
+1 10000
+2 10000
+3 628
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_116.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 10000
+3 4450
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_117.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 142)} 
+
+1 10000
+2 10000
+3 6168
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_119.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 177, 139)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_286.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 179, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 179, 142)} 
+
+1 10000
+2 4514
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_290.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 169, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 169, 144)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_292.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 159, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 159, 137)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_294.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 187, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 187, 134)} 
+
+1 10000
+2 9160
+3 6549
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_296.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 163, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 163, 142)} 
+
+1 10000
+2 3066
+3 8813
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_443.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_447.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 160, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 160, 150)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_448.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_449.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 157, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 157, 142)} 
+
+1 10000
+2 7195
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_451.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 176, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 176, 145)} 
+
+1 10000
+2 5522
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_023.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 168, 151)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 168, 151)} 
+
+1 8737
+2 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_025.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 163, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 163, 137)} 
+
+1 10000
+2 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_027.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 144)} 
+
+1 10000
+2 6805
+3 6061
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_031.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 163, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 163, 145)} 
+
+1 10000
+2 10000
+3 4173
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_032.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 7308
+3 108
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_187.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+1 10000
+2 5932
+3 494
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_189.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 157, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 157, 142)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_191.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 146)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 146)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_193.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 173, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 173, 139)} 
+
+1 10000
+2 10000
+3 2593
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_198.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 176, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 176, 133)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_310.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 180, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 180, 140)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_314.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 132)} 
+
+1 10000
+2 1693
+3 5701
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_323.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 182, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 182, 132)} 
+
+1 10000
+2 1748
+3 6149
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_324.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 172, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 172, 129)} 
+
+1 9070
+2 7867
+3 9563
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_326.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 157, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 157, 135)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_453.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 169, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 169, 140)} 
+
+1 10000
+2 47
+3 3218
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_457.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 166, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 166, 140)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_461.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 177, 139)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_467.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 139)} 
+
+1 10000
+2 6284
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_472.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 174, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 174, 150)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_066.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 173, 143)} 
+
+1 10000
+2 5862
+3 241
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_068.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 170, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 170, 136)} 
+
+1 10000
+2 9801
+3 9884
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_079.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 127, 169, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 127, 169, 133)} 
+
+1 10000
+2 1475
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_085.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 140)} 
+
+1 10000
+2 10000
+3 7838
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_087.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 180, 141)} 
+
+1 8183
+2 3384
+3 8564
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_160.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 162, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 162, 137)} 
+
+1 10000
+2 1654
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_164.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 169, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 169, 143)} 
+
+1 10000
+2 688
+3 3475
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_168.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 158, 137)} 
+
+1 10000
+2 9160
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_172.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_174.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 163, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 163, 129)} 
+
+1 10000
+2 733
+3 2998
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_297.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 177, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 177, 133)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_300.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 130)} 
+
+1 10000
+2 521
+3 6473
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_304.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 178, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 178, 138)} 
+
+1 10000
+2 2307
+3 5973
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_306.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 179, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 179, 141)} 
+
+1 10000
+2 9313
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_308.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 119, 163, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 119, 163, 143)} 
+
+1 10000
+2 319
+3 5096
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_473.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 169, 152)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 169, 152)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_475.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 169, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 169, 141)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_477.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 169, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 169, 134)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_482.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 166, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 166, 142)} 
+
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_stage0/BRATS_484.npz
+using nonzero mask for normalization
+using nonzero mask for normalization
+using nonzero mask for normalization
+using nonzero mask for normalization
+Are we using the nonzero mask for normalization? OrderedDict([(0, True), (1, True), (2, True), (3, True)])
+the median shape of the dataset is  [138. 169. 138.]
+the max shape in the dataset is  [146. 187. 153.]
+the min shape in the dataset is  [119. 144. 128.]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [138. 169. 138.]
+[{'batch_size': 106, 'num_pool_per_axis': [5, 5], 'patch_size': array([192, 160]), 'median_patient_size_in_voxels': array([138, 169, 138]), 'current_spacing': array([1., 1., 1.]), 'original_spacing': array([1., 1., 1.]), 'pool_op_kernel_sizes': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'do_dummy_2D_data_aug': False}]
+Initializing to run preprocessing
+npz folder: ./nnUNet_raw_data_base/nnUNet_cropped_data/Task001_SegVal_BrainTumor
+output_folder: ./nnUNet_preprocessed/Task001_SegVal_BrainTumor
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 156, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 156, 129)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_004.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 180, 141)} 
+
+normalization...
+normalization done
+1 7981
+2 310
+3 4678
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_013.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 166, 149)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 166, 149)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_016.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 155, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 155, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_017.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 169, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 169, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_019.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 156, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 156, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 5969
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_132.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 8035
+3 5818
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_133.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 168, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 168, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_140.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 159, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 159, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 1430
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_143.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 174, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 174, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 6
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_146.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 166, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 166, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_251.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 152, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 152, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 5487
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_252.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 166, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 166, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 4334
+3 97
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_257.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 4736
+3 14
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_259.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_263.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 160, 147)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 160, 147)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_386.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 153, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 153, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_396.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 167, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_397.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 174, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 174, 150)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_066.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 173, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 5862
+3 241
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_068.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 170, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 170, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 9801
+3 9884
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_079.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 127, 169, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 127, 169, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 1475
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_085.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 7838
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_087.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+normalization...
+normalization done
+1 7806
+2 672
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_175.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 160, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 160, 150)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_181.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 9315
+2 6682
+3 650
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_183.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 8594
+3 108
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_185.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 9222
+3 146
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_186.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 167, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 167, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 8446
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_267.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 165, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 165, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 4144
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_269.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 176, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 176, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_275.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 169, 128)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 169, 128)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_277.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 156, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 156, 129)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_284.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 176, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 176, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 1523
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_420.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 166, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 166, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 9087
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_422.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 166, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 166, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_426.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 160, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 160, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8726
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_052.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 7414
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_054.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 4991
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_056.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 151, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 151, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8334
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_058.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 164, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 164, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_064.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 171, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 3736
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_121.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 7387
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_123.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_125.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 158, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 158, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_127.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 174, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 174, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_131.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 165, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 165, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 9901
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_226.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 144, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 144, 135)} 
+
+normalization...
+normalization done
+1 10000
+2 3159
+3 6823
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_231.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 158, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_240.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 158, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_241.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 177, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8697
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_245.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 179, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 179, 135)} 
+
+normalization...
+normalization done
+1 10000
+2 7469
+3 9460
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_367.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 187, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 187, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_369.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 173, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 4122
+3 3691
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_379.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 171, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 171, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 7098
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_035.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 160, 147)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 160, 147)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_037.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 130)} 
+
+normalization...
+normalization done
+1 10000
+2 2899
+3 9907
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_039.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 159, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 159, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_040.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 163, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 163, 135)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 352
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_042.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 171, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 171, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 8156
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_111.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 168, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 168, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 344
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_115.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 165, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 165, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 628
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_116.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 4450
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_117.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 6168
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_119.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 177, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_286.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 179, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 179, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 4514
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_290.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 169, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 169, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_292.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 132, 159, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 132, 159, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_294.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 187, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 187, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 9160
+3 6549
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_296.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 163, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 163, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 3066
+3 8813
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_443.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_447.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 160, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 160, 150)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_448.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 176, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 176, 145)} 
+
+normalization...
+normalization done
+1 10000
+2 5522
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_023.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 168, 151)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 168, 151)} 
+
+normalization...
+normalization done
+1 8737
+2 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_025.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 163, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 163, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_027.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 6805
+3 6061
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_031.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 163, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 163, 145)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 4173
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_032.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 7308
+3 108
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_187.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 5932
+3 494
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_189.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 157, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 157, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_191.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 146)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 146)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_193.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 173, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 173, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 2593
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_198.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 135, 163, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 135, 163, 129)} 
+
+normalization...
+normalization done
+1 10000
+2 733
+3 2998
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_297.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 177, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 177, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_300.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 171, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 171, 130)} 
+
+normalization...
+normalization done
+1 10000
+2 521
+3 6473
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_304.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 178, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 178, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 2307
+3 5973
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_306.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 179, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 179, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 9313
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_308.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 119, 163, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 119, 163, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 319
+3 5096
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_473.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 169, 152)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 169, 152)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_475.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 169, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 169, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_477.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 164, 150)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 164, 150)} 
+
+normalization...
+normalization done
+1 10000
+2 3271
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_043.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 171, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 171, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_046.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 170, 145)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 170, 145)} 
+
+normalization...
+normalization done
+1 10000
+2 6028
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_048.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 165, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 165, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 7099
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_050.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 153, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 153, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_051.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 180, 141)} 
+
+normalization...
+normalization done
+1 8183
+2 3384
+3 8564
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_160.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 162, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 162, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 1654
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_164.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 169, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 169, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 688
+3 3475
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_168.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 158, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 158, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 9160
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_172.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 167, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 167, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_174.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 176, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 176, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_310.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 180, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 180, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_314.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 1693
+3 5701
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_323.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 182, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 182, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 1748
+3 6149
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_324.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 172, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 172, 129)} 
+
+normalization...
+normalization done
+1 9070
+2 7867
+3 9563
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_326.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 157, 135)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 157, 135)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_453.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 169, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 169, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 47
+3 3218
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_457.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 166, 140)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 166, 140)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_461.npz
+no resampling necessary
+no resampling necessary
+before: no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 128, 166, 153)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 128, 166, 153)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 9553
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_101.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 145, 149, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 145, 149, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_103.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8160
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_104.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_105.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 175, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 175, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 8478
+3 2927
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_107.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 130, 172, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 130, 172, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_202.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 170, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 170, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_210.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 170, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 170, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 7646
+3 7195
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_216.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 145, 181, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 145, 181, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 4114
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_218.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 172, 138)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 172, 138)} 
+
+normalization...
+normalization done
+1 10000
+2 1491
+3 1591
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_224.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 130)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 130)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_332.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 187, 137)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 187, 137)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_334.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 402
+3 1412
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_338.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 174, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 174, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 163
+3 1357
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_340.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 146, 178, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 146, 178, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_341.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 146, 180, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 146, 180, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_094.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 141, 166, 144)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 141, 166, 144)} 
+
+normalization...
+normalization done
+1 10000
+2 1847
+3 3395
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_095.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 170, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 170, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_097.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 164, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 164, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_098.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 167, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 167, 131)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 6064
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_099.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8394
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_148.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 4430
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_151.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 173, 143)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 173, 143)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 8572
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_152.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_154.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 173, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 173, 141)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_156.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 144, 165, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 144, 165, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 4449
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_345.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 186, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 186, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 9075
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_347.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 136, 173, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 136, 173, 131)} 
+
+normalization...
+normalization done
+1 10000
+2 901
+3 1172
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_353.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 175, 128)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 175, 128)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_363.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 185, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 185, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_364.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 168, 136)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 168, 136)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_404.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 140, 167, 131)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 140, 167, 131)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 3852
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_416.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 142, 171, 133)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 142, 171, 133)} 
+
+normalization...
+normalization done
+1 10000
+2 2310
+3 9619
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_382.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 129, 157, 129)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 129, 157, 129)} 
+
+normalization...
+normalization done
+1 10000
+2 2593
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_385.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 156, 132)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 156, 132)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_428.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 137, 180, 141)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 137, 180, 141)} 
+
+normalization...
+normalization done
+1 9757
+2 460
+3 8858
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_438.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 172, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 172, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_449.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 131, 157, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 131, 157, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 7195
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_451.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 134, 177, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 134, 177, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_467.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 138, 161, 139)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 138, 161, 139)} 
+
+normalization...
+normalization done
+1 10000
+2 6284
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_472.npz
+{'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 143, 169, 134)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 143, 169, 134)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_482.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (4, 139, 166, 142)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (4, 139, 166, 142)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+3 10000
+saving:  ./nnUNet_preprocessed/Task001_SegVal_BrainTumor/nnUNetData_plans_v2.1_2D_stage0/BRATS_484.npz
++ wait

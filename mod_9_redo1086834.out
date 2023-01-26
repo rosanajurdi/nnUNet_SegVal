@@ -1,0 +1,3103 @@
++ cd /gpfsdswork/projects/rech/pzi/uju59ys/nnUNet
++ module purge
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash purge
++ eval unset '_LMFILES__modshare;
+unset' 'LOADEDMODULES_modshare;
+unset' 'MODULES_LMCONFLICT_modshare;
+unset' '_LMFILES_;
+unset' 'LOADEDMODULES;
+unset' 'MODULES_LMCONFLICT;
+test' '0;'
+++ unset _LMFILES__modshare
+++ unset LOADEDMODULES_modshare
+++ unset MODULES_LMCONFLICT_modshare
+++ unset _LMFILES_
+++ unset LOADEDMODULES
+++ unset MODULES_LMCONFLICT
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ conda activate nnUnet_2
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
++ srun nnUNet_plan_and_preprocess -t 4
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+hippocampus_088
+hippocampus_089
+hippocampus_091
+hippocampus_092
+hippocampus_093
+hippocampus_207
+hippocampus_210
+hippocampus_215
+hippocampus_217
+hippocampus_219
+hippocampus_314
+hippocampus_316
+hippocampus_317
+hippocampus_318
+hippocampus_319
+hippocampus_095
+hippocampus_096
+hippocampus_099
+hippocampus_102
+hippocampus_109
+hippocampus_146
+hippocampus_148
+hippocampus_149
+hippocampus_150
+hippocampus_152
+hippocampus_245
+hippocampus_248
+hippocampus_249
+hippocampus_252
+hippocampus_253
+hippocampus_329
+hippocampus_330
+hippocampus_331
+hippocampus_332
+hippocampus_334
+hippocampus_037
+hippocampus_039
+hippocampus_040
+hippocampus_041
+hippocampus_042
+hippocampus_173
+hippocampus_174
+hippocampus_177
+hippocampus_180
+hippocampus_185
+hippocampus_257
+hippocampus_259
+hippocampus_263
+hippocampus_264
+hippocampus_269
+hippocampus_345
+hippocampus_349
+hippocampus_350
+hippocampus_351
+hippocampus_352
+hippocampus_114
+hippocampus_124
+hippocampus_126
+hippocampus_127
+hippocampus_130
+hippocampus_290
+hippocampus_292
+hippocampus_294
+hippocampus_296
+hippocampus_300
+hippocampus_380
+hippocampus_387
+hippocampus_389
+hippocampus_390
+hippocampus_394
+hippocampus_015
+hippocampus_017
+hippocampus_025
+hippocampus_034
+hippocampus_035
+hippocampus_154
+hippocampus_157
+hippocampus_158
+hippocampus_160
+hippocampus_161
+hippocampus_228
+hippocampus_231
+hippocampus_232
+hippocampus_235
+hippocampus_236
+hippocampus_335
+hippocampus_337
+hippocampus_340
+hippocampus_341
+hippocampus_343
+hippocampus_045
+hippocampus_049
+hippocampus_051
+hippocampus_052
+hippocampus_056
+hippocampus_135
+hippocampus_142
+hippocampus_143
+hippocampus_144
+hippocampus_145
+hippocampus_220
+hippocampus_221
+hippocampus_223
+hippocampus_224
+hippocampus_225
+hippocampus_320
+hippocampus_321
+hippocampus_322
+hippocampus_327
+hippocampus_328
+hippocampus_057
+hippocampus_058
+hippocampus_065
+hippocampus_075
+hippocampus_083
+hippocampus_189
+hippocampus_190
+hippocampus_194
+hippocampus_197
+hippocampus_204
+hippocampus_301
+hippocampus_304
+hippocampus_305
+hippocampus_308
+hippocampus_310
+hippocampus_367
+hippocampus_368
+hippocampus_373
+hippocampus_375
+hippocampus_376
+hippocampus_003
+hippocampus_004
+hippocampus_006
+hippocampus_007
+hippocampus_008
+hippocampus_164
+hippocampus_165
+hippocampus_170
+hippocampus_171
+hippocampus_172
+hippocampus_277
+hippocampus_279
+hippocampus_280
+hippocampus_286
+hippocampus_287
+hippocampus_354
+hippocampus_358
+hippocampus_359
+hippocampus_360
+hippocampus_363
+
+
+
+ Task004_SegVal_Hippocampu
+number of threads:  (8, 8) 
+
+not using nonzero mask for normalization
+Are we using the nonzero mask for normalization? OrderedDict([(0, False)])
+the median shape of the dataset is  [35. 51. 35.]
+the max shape in the dataset is  [47. 59. 42.]
+the min shape in the dataset is  [26. 43. 31.]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [35. 51. 35.]
+generating configuration for 3d_fullres
+{0: {'batch_size': 5, 'num_pool_per_axis': [3, 3, 3], 'patch_size': array([40, 56, 40]), 'median_patient_size_in_voxels': array([35, 51, 35]), 'current_spacing': array([1., 1., 1.]), 'original_spacing': array([1., 1., 1.]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}
+transpose forward [0, 1, 2]
+transpose backward [0, 1, 2]
+Initializing to run preprocessing
+npz folder: ./nnUNet_raw_data_base/nnUNet_cropped_data/Task004_SegVal_Hippocampu
+output_folder: ./nnUNet_preprocessed/Task004_SegVal_Hippocampu
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 34)} 
+
+1 1550
+2 1803
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_003.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 52, 36)} 
+
+1 1832
+2 1866
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_004.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 35)} 
+
+1 2314
+2 1949
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_006.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 47, 34)} 
+
+1 1842
+2 1530
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_007.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 36)} 
+
+1 1725
+2 1523
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_008.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 35)} 
+
+1 1987
+2 2087
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_207.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 34)} 
+
+1 1641
+2 1354
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_210.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 49, 35)} 
+
+1 1600
+2 1733
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_215.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 53, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 53, 38)} 
+
+1 2020
+2 1082
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_217.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 45, 37)} 
+
+1 1538
+2 1292
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_219.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 50, 31)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 50, 31)} 
+
+1 1595
+2 1865
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_301.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 48, 36)} 
+
+1 2016
+2 1520
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_304.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 49, 34)} 
+
+1 1649
+2 1380
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_305.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 38)} 
+
+1 2011
+2 1643
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_308.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 52, 35)} 
+
+1 1823
+2 1950
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_310.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 49, 34)} 
+
+1 2191
+2 1594
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_095.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 47, 34)} 
+
+1 1890
+2 1450
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_096.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 52, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 52, 33)} 
+
+1 1252
+2 1283
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_099.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 55, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 55, 36)} 
+
+1 2289
+2 1666
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_102.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 36)} 
+
+1 1589
+2 1630
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_109.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 46, 35)} 
+
+1 1599
+2 1658
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_154.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 36)} 
+
+1 1444
+2 1908
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_157.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 52, 38)} 
+
+1 1874
+2 1538
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_158.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 51, 34)} 
+
+1 1682
+2 1464
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_160.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 51, 35)} 
+
+1 1775
+2 1942
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_161.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 35)} 
+
+1 1459
+2 1708
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_290.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 38)} 
+
+1 1911
+2 1568
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_292.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 44, 44, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 44, 44, 35)} 
+
+1 1746
+2 1502
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_294.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 54, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 54, 35)} 
+
+1 2098
+2 1820
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_296.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 53, 34)} 
+
+1 1846
+2 1558
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_300.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 34)} 
+
+1 1578
+2 1617
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_037.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 53, 34)} 
+
+1 2038
+2 1620
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_039.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 36)} 
+
+1 1906
+2 1539
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_040.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 36)} 
+
+1 1777
+2 1986
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_041.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 37)} 
+
+1 1871
+2 1976
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_042.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 53, 35)} 
+
+1 1781
+2 1674
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_189.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 52, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 52, 37)} 
+
+1 1665
+2 1644
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_190.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 50, 35)} 
+
+1 1361
+2 1533
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_194.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 38)} 
+
+1 1784
+2 1593
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_197.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 48, 36)} 
+
+1 1642
+2 1231
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_204.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 34)} 
+
+1 1188
+2 1675
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_257.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 51, 33)} 
+
+1 1338
+2 1582
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_259.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 36)} 
+
+1 1647
+2 1887
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_263.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 38)} 
+
+1 1934
+2 1908
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_264.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 35)} 
+
+1 1725
+2 1714
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_269.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 47, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 47, 32)} 
+
+1 1263
+2 1269
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_335.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 44, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 44, 33)} 
+
+1 1551
+2 1702
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_337.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 46, 35)} 
+
+1 1592
+2 1618
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_340.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 48, 34)} 
+
+1 1331
+2 1257
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_341.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 45, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 45, 32)} 
+
+1 1067
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_343.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 40)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 40)} 
+
+1 2110
+2 1768
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_088.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 51, 34)} 
+
+1 1725
+2 1961
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_089.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 51, 36)} 
+
+1 1389
+2 1672
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_091.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 49, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 49, 38)} 
+
+1 1488
+2 1654
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_092.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 34)} 
+
+1 1762
+2 1980
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_093.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 36)} 
+
+1 2017
+2 1505
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_146.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 48, 34)} 
+
+1 1689
+2 1256
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_148.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 49, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 49, 33)} 
+
+1 1620
+2 1523
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_149.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 49, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 49, 37)} 
+
+1 1605
+2 1483
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_150.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 36)} 
+
+1 2121
+2 1873
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_152.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 48, 35)} 
+
+1 1630
+2 1695
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_245.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 50, 36)} 
+
+1 1887
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_248.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 32)} 
+
+1 1784
+2 1565
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_249.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 55, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 55, 37)} 
+
+1 2060
+2 1515
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_252.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 34)} 
+
+1 2343
+2 1480
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_253.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 53, 34)} 
+
+1 1937
+2 1738
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_329.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 55, 35)} 
+
+1 2232
+2 1765
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_330.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 35)} 
+
+1 1561
+2 1633
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_331.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 35)} 
+
+1 1803
+2 1524
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_332.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 47, 34)} 
+
+1 1242
+2 1436
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_334.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 50, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 50, 38)} 
+
+1 2459
+2 1245
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_114.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 55, 35)} 
+
+1 1606
+2 1531
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_124.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 44, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 44, 39)} 
+
+1 1650
+2 1495
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_126.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 55, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 55, 38)} 
+
+1 2094
+2 1655
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_127.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 35)} 
+
+1 1705
+2 1580
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_130.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 45, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 45, 39)} 
+
+1 1850
+2 1080
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_220.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 32)} 
+
+1 1193
+2 1255
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_221.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 35)} 
+
+1 1577
+2 1925
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_223.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 48, 37)} 
+
+1 2033
+2 1787
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_224.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 53, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 53, 33)} 
+
+1 1119
+2 1356
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_225.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 37)} 
+
+1 1697
+2 1246
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_314.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 37)} 
+
+1 1580
+2 1515
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_316.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 33)} 
+
+1 1656
+2 1629
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_317.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 37)} 
+
+1 2029
+2 1487
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_318.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 33)} 
+
+1 1380
+2 1042
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_319.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 46, 35)} 
+
+1 1730
+2 1705
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_380.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 33)} 
+
+1 1509
+2 1571
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_387.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 49, 34)} 
+
+1 1763
+2 1184
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_389.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 38)} 
+
+1 1886
+2 1366
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_390.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 52, 36)} 
+
+1 1987
+2 1827
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_394.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 35)} 
+
+1 1390
+2 1383
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_057.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 53, 34)} 
+
+1 1334
+2 1793
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_058.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 39)} 
+
+1 1730
+2 1920
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_065.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 47, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 47, 32)} 
+
+1 1222
+2 1826
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_075.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 33)} 
+
+1 1650
+2 1721
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_083.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 49, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 49, 32)} 
+
+1 1363
+2 1266
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_135.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 43, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 43, 38)} 
+
+1 1322
+2 1375
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_142.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 45, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 45, 32)} 
+
+1 1193
+2 1204
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_143.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 45, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 45, 34)} 
+
+1 1227
+2 1244
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_144.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 36)} 
+
+1 2074
+2 1462
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_145.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 48, 37)} 
+
+1 2033
+2 1638
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_228.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 47, 33)} 
+
+1 1179
+2 1468
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_231.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 44, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 44, 36)} 
+
+1 1514
+2 1349
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_232.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 58, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 58, 37)} 
+
+1 1479
+2 1561
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_235.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 57, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 57, 37)} 
+
+1 1595
+2 1494
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_236.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 49, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 49, 32)} 
+
+1 1685
+2 1295
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_345.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 50, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 50, 34)} 
+
+1 1217
+2 1373
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_349.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 49, 35)} 
+
+1 1475
+2 1467
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_350.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 35)} 
+
+1 1822
+2 1902
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_351.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 38)} 
+
+1 1966
+2 1713
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_352.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 51, 42)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 51, 42)} 
+
+1 1511
+2 1308
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_015.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 48, 35)} 
+
+1 2135
+2 1343
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_017.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 48, 35)} 
+
+1 1896
+2 1430
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_025.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 36)} 
+
+1 1830
+2 1545
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_034.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 47, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 47, 35)} 
+
+1 1867
+2 1583
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_035.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 47, 48, 41)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 47, 48, 41)} 
+
+1 1700
+2 2169
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_164.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 49, 34)} 
+
+1 1544
+2 1479
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_165.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 34)} 
+
+1 1311
+2 1559
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_170.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 56, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 56, 35)} 
+
+1 1849
+2 1825
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_171.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 56, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 56, 34)} 
+
+1 1981
+2 1942
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_172.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 59, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 59, 33)} 
+
+1 1695
+2 1609
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_277.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 50, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 50, 34)} 
+
+1 1261
+2 1121
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_279.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 47, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 47, 37)} 
+
+1 1367
+2 1246
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_280.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 46, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 46, 45, 37)} 
+
+1 1562
+2 1610
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_286.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 50, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 50, 37)} 
+
+1 1766
+2 1934
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_287.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 50, 36)} 
+
+1 1529
+2 1383
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_354.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 50, 35)} 
+
+1 1519
+2 1368
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_358.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 49, 35)} 
+
+1 1262
+2 1372
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_359.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 34)} 
+
+1 1298
+2 1633
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_360.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 38)} 
+
+1 1838
+2 1668
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_363.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 48, 36)} 
+
+1 1246
+2 1622
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_045.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 51, 35)} 
+
+1 1908
+2 1820
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_049.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 54, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 54, 33)} 
+
+1 1521
+2 1588
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_051.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 52, 34)} 
+
+1 1847
+2 1514
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_052.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 47, 41)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 47, 41)} 
+
+1 1965
+2 1768
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_056.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 53, 35)} 
+
+1 1539
+2 2018
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_173.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 55, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 55, 37)} 
+
+1 1794
+2 2153
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_174.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 44, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 44, 33)} 
+
+1 1054
+2 1539
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_177.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 45, 37)} 
+
+1 1397
+2 1281
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_180.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 49, 35)} 
+
+1 1841
+2 1272
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_185.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 47, 33)} 
+
+1 1054
+2 1397
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_320.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 46, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 46, 34)} 
+
+1 1601
+2 1349
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_321.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 47, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 47, 38)} 
+
+1 1979
+2 1471
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_322.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 54, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 54, 36)} 
+
+1 2092
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_327.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 54, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 54, 38)} 
+
+1 2371
+2 1586
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_328.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 57, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 57, 36)} 
+
+1 2212
+2 1939
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_367.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 55, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 55, 38)} 
+
+1 2593
+2 1808
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_368.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 49, 34)} 
+
+1 1882
+2 1807
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_373.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 54, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 54, 32)} 
+
+1 1686
+2 1536
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_375.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 55, 35)} 
+
+1 1625
+2 1956
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_stage0/hippocampus_376.npz
+not using nonzero mask for normalization
+Are we using the nonzero mask for normalization? OrderedDict([(0, False)])
+the median shape of the dataset is  [35. 51. 35.]
+the max shape in the dataset is  [47. 59. 42.]
+the min shape in the dataset is  [26. 43. 31.]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [35. 51. 35.]
+[{'batch_size': 209, 'num_pool_per_axis': [3, 3], 'patch_size': array([56, 40]), 'median_patient_size_in_voxels': array([35, 51, 35]), 'current_spacing': array([1., 1., 1.]), 'original_spacing': array([1., 1., 1.]), 'pool_op_kernel_sizes': [[2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3]], 'do_dummy_2D_data_aug': False}]
+Initializing to run preprocessing
+npz folder: ./nnUNet_raw_data_base/nnUNet_cropped_data/Task004_SegVal_Hippocampu
+output_folder: ./nnUNet_preprocessed/Task004_SegVal_Hippocampu
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 51, 42)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 51, 42)} 
+
+normalization...
+normalization done
+1 1511
+2 1308
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_015.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 48, 35)} 
+
+normalization...
+normalization done
+1 2135
+2 1343
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_017.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 48, 35)} 
+
+normalization...
+normalization done
+1 1896
+2 1430
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_025.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 36)} 
+
+normalization...
+normalization done
+1 1830
+2 1545
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_034.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 47, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 47, 35)} 
+
+normalization...
+normalization done
+1 1867
+2 1583
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_035.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 49, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 49, 32)} 
+
+normalization...
+normalization done
+1 1363
+2 1266
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_135.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 43, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 43, 38)} 
+
+normalization...
+normalization done
+1 1322
+2 1375
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_142.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 45, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 45, 32)} 
+
+normalization...
+normalization done
+1 1193
+2 1204
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_143.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 45, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 45, 34)} 
+
+normalization...
+normalization done
+1 1227
+2 1244
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_144.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 36)} 
+
+normalization...
+normalization done
+1 2074
+2 1462
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_145.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 48, 35)} 
+
+normalization...
+normalization done
+1 1630
+2 1695
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_245.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 50, 36)} 
+
+normalization...
+normalization done
+1 1887
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_248.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 32)} 
+
+normalization...
+normalization done
+1 1784
+2 1565
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_249.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 55, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 55, 37)} 
+
+normalization...
+normalization done
+1 2060
+2 1515
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_252.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 34)} 
+
+normalization...
+normalization done
+1 2343
+2 1480
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_253.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 53, 34)} 
+
+normalization...
+normalization done
+1 1937
+2 1738
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_329.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 55, 35)} 
+
+normalization...
+normalization done
+1 2232
+2 1765
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_330.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 35)} 
+
+normalization...
+normalization done
+1 1561
+2 1633
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_331.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 35)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 40)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 40)} 
+
+normalization...
+normalization done
+1 2110
+2 1768
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_088.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 51, 34)} 
+
+normalization...
+normalization done
+1 1725
+2 1961
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_089.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 51, 36)} 
+
+normalization...
+normalization done
+1 1389
+2 1672
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_091.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 49, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 49, 38)} 
+
+normalization...
+normalization done
+1 1488
+2 1654
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_092.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 34)} 
+
+normalization...
+normalization done
+1 1762
+2 1980
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_093.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 46, 35)} 
+
+normalization...
+normalization done
+1 1599
+2 1658
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_154.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 36)} 
+
+normalization...
+normalization done
+1 1444
+2 1908
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_157.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 52, 38)} 
+
+normalization...
+normalization done
+1 1874
+2 1538
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_158.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 51, 34)} 
+
+normalization...
+normalization done
+1 1682
+2 1464
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_160.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 51, 35)} 
+
+normalization...
+normalization done
+1 1775
+2 1942
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_161.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 59, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 59, 33)} 
+
+normalization...
+normalization done
+1 1695
+2 1609
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_277.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 50, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 50, 34)} 
+
+normalization...
+normalization done
+1 1261
+2 1121
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_279.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 47, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 47, 37)} 
+
+normalization...
+normalization done
+1 1367
+2 1246
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_280.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 46, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 46, 45, 37)} 
+
+normalization...
+normalization done
+1 1562
+2 1610
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_286.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 50, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 50, 37)} 
+
+normalization...
+normalization done
+1 1766
+2 1934
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_287.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 49, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 49, 32)} 
+
+normalization...
+normalization done
+1 1685
+2 1295
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_345.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 50, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 50, 34)} 
+
+normalization...
+normalization done
+1 1217
+2 1373
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_349.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 49, 35)} 
+
+normalization...
+normalization done
+1 1475
+2 1467
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_350.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 35)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 35)} 
+
+normalization...
+normalization done
+1 1390
+2 1383
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_057.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 53, 34)} 
+
+normalization...
+normalization done
+1 1334
+2 1793
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_058.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 39)} 
+
+normalization...
+normalization done
+1 1730
+2 1920
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_065.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 47, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 47, 32)} 
+
+normalization...
+normalization done
+1 1222
+2 1826
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_075.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 33)} 
+
+normalization...
+normalization done
+1 1650
+2 1721
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_083.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 53, 35)} 
+
+normalization...
+normalization done
+1 1781
+2 1674
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_189.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 52, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 52, 37)} 
+
+normalization...
+normalization done
+1 1665
+2 1644
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_190.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 50, 35)} 
+
+normalization...
+normalization done
+1 1361
+2 1533
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_194.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 38)} 
+
+normalization...
+normalization done
+1 1784
+2 1593
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_197.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 48, 36)} 
+
+normalization...
+normalization done
+1 1642
+2 1231
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_204.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 34)} 
+
+normalization...
+normalization done
+1 1188
+2 1675
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_257.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 51, 33)} 
+
+normalization...
+normalization done
+1 1338
+2 1582
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_259.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 36)} 
+
+normalization...
+normalization done
+1 1647
+2 1887
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_263.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 38)} 
+
+normalization...
+normalization done
+1 1934
+2 1908
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_264.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 35)} 
+
+normalization...
+normalization done
+1 1725
+2 1714
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_269.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 47, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 47, 32)} 
+
+normalization...
+normalization done
+1 1263
+2 1269
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_335.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 44, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 44, 33)} 
+
+normalization...
+normalization done
+1 1551
+2 1702
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_337.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 46, 35)} 
+
+normalization...
+normalization done
+1 1592
+2 1618
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_340.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 48, 34)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 34)} 
+
+normalization...
+normalization done
+1 1578
+2 1617
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_037.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 53, 34)} 
+
+normalization...
+normalization done
+1 2038
+2 1620
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_039.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 36)} 
+
+normalization...
+normalization done
+1 1906
+2 1539
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_040.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 36)} 
+
+normalization...
+normalization done
+1 1777
+2 1986
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_041.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 37)} 
+
+normalization...
+normalization done
+1 1871
+2 1976
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_042.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 47, 48, 41)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 47, 48, 41)} 
+
+normalization...
+normalization done
+1 1700
+2 2169
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_164.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 49, 34)} 
+
+normalization...
+normalization done
+1 1544
+2 1479
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_165.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 34)} 
+
+normalization...
+normalization done
+1 1311
+2 1559
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_170.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 56, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 56, 35)} 
+
+normalization...
+normalization done
+1 1849
+2 1825
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_171.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 56, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 56, 34)} 
+
+normalization...
+normalization done
+1 1981
+2 1942
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_172.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 50, 31)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 50, 31)} 
+
+normalization...
+normalization done
+1 1595
+2 1865
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_301.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 48, 36)} 
+
+normalization...
+normalization done
+1 2016
+2 1520
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_304.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 49, 34)} 
+
+normalization...
+normalization done
+1 1649
+2 1380
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_305.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 38)} 
+
+normalization...
+normalization done
+1 2011
+2 1643
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_308.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 52, 35)} 
+
+normalization...
+normalization done
+1 1823
+2 1950
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_310.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 50, 36)} 
+
+normalization...
+normalization done
+1 1529
+2 1383
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_354.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 50, 35)} 
+
+normalization...
+normalization done
+1 1519
+2 1368
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_358.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 49, 35)} 
+
+normalization...
+normalization done
+1 1262
+2 1372
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_359.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 34)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 48, 36)} 
+
+normalization...
+normalization done
+1 1246
+2 1622
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_045.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 51, 35)} 
+
+normalization...
+normalization done
+1 1908
+2 1820
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_049.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 54, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 54, 33)} 
+
+normalization...
+normalization done
+1 1521
+2 1588
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_051.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 52, 34)} 
+
+normalization...
+normalization done
+1 1847
+2 1514
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_052.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 47, 41)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 47, 41)} 
+
+normalization...
+normalization done
+1 1965
+2 1768
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_056.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 35)} 
+
+normalization...
+normalization done
+1 1987
+2 2087
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_207.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 34)} 
+
+normalization...
+normalization done
+1 1641
+2 1354
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_210.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 49, 35)} 
+
+normalization...
+normalization done
+1 1600
+2 1733
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_215.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 53, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 53, 38)} 
+
+normalization...
+normalization done
+1 2020
+2 1082
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_217.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 45, 37)} 
+
+normalization...
+normalization done
+1 1538
+2 1292
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_219.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 53, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 53, 37)} 
+
+normalization...
+normalization done
+1 1697
+2 1246
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_314.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 37)} 
+
+normalization...
+normalization done
+1 1580
+2 1515
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_316.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 51, 33)} 
+
+normalization...
+normalization done
+1 1656
+2 1629
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_317.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 37)} 
+
+normalization...
+normalization done
+1 2029
+2 1487
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_318.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 33)} 
+
+normalization...
+normalization done
+1 1380
+2 1042
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_319.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 46, 35)} 
+
+normalization...
+normalization done
+1 1730
+2 1705
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_380.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 33)} 
+
+normalization...
+normalization done
+1 1509
+2 1571
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_387.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 49, 34)} 
+
+normalization...
+normalization done
+1 1763
+2 1184
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_389.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 38)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 49, 34)} 
+
+normalization...
+normalization done
+1 2191
+2 1594
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_095.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 47, 34)} 
+
+normalization...
+normalization done
+1 1890
+2 1450
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_096.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 52, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 52, 33)} 
+
+normalization...
+normalization done
+1 1252
+2 1283
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_099.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 55, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 55, 36)} 
+
+normalization...
+normalization done
+1 2289
+2 1666
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_102.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 36)} 
+
+normalization...
+normalization done
+1 1589
+2 1630
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_109.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 51, 36)} 
+
+normalization...
+normalization done
+1 2017
+2 1505
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_146.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 48, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 48, 34)} 
+
+normalization...
+normalization done
+1 1689
+2 1256
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_148.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 49, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 49, 33)} 
+
+normalization...
+normalization done
+1 1620
+2 1523
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_149.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 49, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 49, 37)} 
+
+normalization...
+normalization done
+1 1605
+2 1483
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_150.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 36)} 
+
+normalization...
+normalization done
+1 2121
+2 1873
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_152.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 48, 37)} 
+
+normalization...
+normalization done
+1 2033
+2 1638
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_228.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 47, 33)} 
+
+normalization...
+normalization done
+1 1179
+2 1468
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_231.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 44, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 44, 36)} 
+
+normalization...
+normalization done
+1 1514
+2 1349
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_232.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 58, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 58, 37)} 
+
+normalization...
+normalization done
+1 1479
+2 1561
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_235.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 57, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 57, 37)} 
+
+normalization...
+normalization done
+1 1595
+2 1494
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_236.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 57, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 57, 36)} 
+
+normalization...
+normalization done
+1 2212
+2 1939
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_367.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 55, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 55, 38)} 
+
+normalization...
+normalization done
+1 2593
+2 1808
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_368.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 49, 34)} 
+
+normalization...
+normalization done
+1 1882
+2 1807
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_373.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 54, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 54, 32)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 34)} 
+
+normalization...
+normalization done
+1 1550
+2 1803
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_003.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 52, 36)} 
+
+normalization...
+normalization done
+1 1832
+2 1866
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_004.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 35)} 
+
+normalization...
+normalization done
+1 2314
+2 1949
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_006.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 47, 34)} 
+
+normalization...
+normalization done
+1 1842
+2 1530
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_007.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 36)} 
+
+normalization...
+normalization done
+1 1725
+2 1523
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_008.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 53, 35)} 
+
+normalization...
+normalization done
+1 1539
+2 2018
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_173.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 55, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 55, 37)} 
+
+normalization...
+normalization done
+1 1794
+2 2153
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_174.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 44, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 44, 33)} 
+
+normalization...
+normalization done
+1 1054
+2 1539
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_177.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 45, 37)} 
+
+normalization...
+normalization done
+1 1397
+2 1281
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_180.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 49, 35)} 
+
+normalization...
+normalization done
+1 1841
+2 1272
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_185.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 35)} 
+
+normalization...
+normalization done
+1 1459
+2 1708
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_290.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 38)} 
+
+normalization...
+normalization done
+1 1911
+2 1568
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_292.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 44, 44, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 44, 44, 35)} 
+
+normalization...
+normalization done
+1 1746
+2 1502
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_294.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 54, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 54, 35)} 
+
+normalization...
+normalization done
+1 2098
+2 1820
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_296.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 53, 34)} 
+
+normalization...
+normalization done
+1 1846
+2 1558
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_300.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 50, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 50, 38)} 
+
+normalization...
+normalization done
+1 2459
+2 1245
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_114.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 55, 35)} 
+
+normalization...
+normalization done
+1 1606
+2 1531
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_124.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 44, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 44, 39)} 
+
+normalization...
+normalization done
+1 1650
+2 1495
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_126.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 55, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 55, 38)} 
+
+normalization...
+normalization done
+1 2094
+2 1655
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_127.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 35)} 
+
+normalization...
+normalization done
+1 1705
+2 1580
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_130.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 45, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 45, 39)} 
+
+normalization...
+normalization done
+1 1850
+2 1080
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_220.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 32)} 
+
+normalization...
+normalization done
+1 1193
+2 1255
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_221.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 35)} 
+
+normalization...
+normalization done
+1 1577
+2 1925
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_223.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 48, 37)} 
+
+normalization...
+normalization done
+1 2033
+2 1787
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_224.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 53, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 53, 33)} 
+
+normalization...
+normalization done
+1 1119
+2 1356
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_225.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 47, 33)} 
+
+normalization...
+normalization done
+1 1054
+2 1397
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_320.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 46, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 46, 34)} 
+
+normalization...
+normalization done
+1 1601
+2 1349
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_321.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 47, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 47, 38)} 
+
+normalization...
+normalization done
+1 1979
+2 1471
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_322.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 27, 54, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 27, 54, 36)} 
+
+normalization...
+normalization done
+1 2092
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_327.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 54, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 54, 38)} 
+
+normalization...
+normalization done
+1 2371
+2 1586
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_328.npz
+normalization done
+1 1803
+2 1524
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_332.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 47, 34)} 
+
+normalization...
+normalization done
+1 1242
+2 1436
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_334.npz
+normalization done
+1 1331
+2 1257
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_341.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 45, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 45, 32)} 
+
+normalization...
+normalization done
+1 1067
+2 1551
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_343.npz
+normalization done
+1 1822
+2 1902
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_351.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 38)} 
+
+normalization...
+normalization done
+1 1966
+2 1713
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_352.npz
+normalization done
+1 1886
+2 1366
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_390.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 52, 36)} 
+
+normalization...
+normalization done
+1 1987
+2 1827
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_394.npz
+normalization done
+1 1298
+2 1633
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_360.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 52, 38)} 
+
+normalization...
+normalization done
+1 1838
+2 1668
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_363.npz
+normalization done
+1 1686
+2 1536
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_375.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 55, 35)} 
+
+normalization...
+normalization done
+1 1625
+2 1956
+saving:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1_2D_stage0/hippocampus_376.npz
++ nnUNet_train 3d_fullres nnUNetTrainerV2 4 0
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+###############################################
+I am running the following nnUNet: 3d_fullres
+My trainer class is:  <class 'nnunet.training.network_training.nnUNetTrainerV2.nnUNetTrainerV2'>
+For that I will be using the following configuration:
+num_classes:  2
+modalities:  {0: 'MRI'}
+use_mask_for_norm OrderedDict([(0, False)])
+keep_only_largest_region None
+min_region_size_per_class None
+min_size_per_class None
+normalization_schemes OrderedDict([(0, 'nonCT')])
+stages...
+
+stage:  0
+{'batch_size': 5, 'num_pool_per_axis': [3, 3, 3], 'patch_size': array([40, 56, 40]), 'median_patient_size_in_voxels': array([35, 51, 35]), 'current_spacing': array([1., 1., 1.]), 'original_spacing': array([1., 1., 1.]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}
+
+I am using stage 0 from these plans
+I am using sample dice + CE loss
+
+I am using data from this folder:  ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/nnUNetData_plans_v2.1
+###############################################
+loading dataset
+loading all case properties
+ROSANA:
+Splits_final.pkl True
+2022-11-29 15:12:42.990744: Using splits from existing split file: ./nnUNet_preprocessed/Task004_SegVal_Hippocampu/splits_final.pkl
+2022-11-29 15:12:43.012209: The split file contains 1 splits.
+2022-11-29 15:12:43.012290: Desired fold for training: 0
+2022-11-29 15:12:43.012357: This split has 100 training and 50 validation cases.
+hippocampus_003
+hippocampus_006
+hippocampus_007
+hippocampus_017
+hippocampus_034
+hippocampus_035
+hippocampus_039
+hippocampus_042
+hippocampus_049
+hippocampus_051
+hippocampus_052
+hippocampus_057
+hippocampus_058
+hippocampus_065
+hippocampus_089
+hippocampus_092
+hippocampus_095
+hippocampus_096
+hippocampus_099
+hippocampus_102
+hippocampus_109
+hippocampus_114
+hippocampus_126
+hippocampus_127
+hippocampus_135
+hippocampus_143
+hippocampus_144
+hippocampus_146
+hippocampus_148
+hippocampus_149
+hippocampus_150
+hippocampus_152
+hippocampus_161
+hippocampus_164
+hippocampus_165
+hippocampus_170
+hippocampus_171
+hippocampus_173
+hippocampus_174
+hippocampus_180
+hippocampus_185
+hippocampus_189
+hippocampus_190
+hippocampus_194
+hippocampus_210
+hippocampus_215
+hippocampus_220
+hippocampus_221
+hippocampus_223
+hippocampus_224
+hippocampus_225
+hippocampus_232
+hippocampus_235
+hippocampus_236
+hippocampus_245
+hippocampus_248
+hippocampus_252
+hippocampus_253
+hippocampus_257
+hippocampus_259
+hippocampus_263
+hippocampus_269
+hippocampus_280
+hippocampus_287
+hippocampus_290
+hippocampus_294
+hippocampus_296
+hippocampus_301
+hippocampus_304
+hippocampus_305
+hippocampus_310
+hippocampus_314
+hippocampus_317
+hippocampus_318
+hippocampus_319
+hippocampus_321
+hippocampus_322
+hippocampus_328
+hippocampus_331
+hippocampus_332
+hippocampus_335
+hippocampus_337
+hippocampus_340
+hippocampus_341
+hippocampus_349
+hippocampus_350
+hippocampus_351
+hippocampus_354
+hippocampus_358
+hippocampus_359
+hippocampus_360
+hippocampus_363
+hippocampus_367
+hippocampus_368
+hippocampus_373
+hippocampus_375
+hippocampus_380
+hippocampus_387
+hippocampus_390
+hippocampus_394
+unpacking dataset
+done
+2022-11-29 15:12:48.116976: lr: 0.01
+using pin_memory on device 0
+slurmstepd: error: *** JOB 1086834 ON r10i3n5 CANCELLED AT 2022-11-29T16:31:43 ***

@@ -1,0 +1,1867 @@
++ cd /gpfsdswork/projects/rech/pzi/uju59ys/nnUNet
++ export INPUT_FOLDER=/gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/imagesTs
++ INPUT_FOLDER=/gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/imagesTs
++ export OUTPUT_FOLDER=/gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D
++ OUTPUT_FOLDER=/gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D
++ module purge
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\'' LD_LIBRARY_PATH='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib'\''' 'LD_LIBRARY_PATH='\'''\''' /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/gpfslocalsys/slurm/current/lib/slurm:/gpfslocalsys/slurm/current/lib
++++ LD_LIBRARY_PATH=
++++ /gpfslocalsup/spack_soft/tcl/8.6.8/gcc-4.8.5-5nqkfcnctewdheju62zvqbsonnzszr6m/bin/tclsh /gpfslocalsup/spack_soft/environment-modules/4.3.1/gcc-4.8.5-ism7cdy4xverxywj27jvjstqwk5oxe2v/libexec/modulecmd.tcl bash purge
++ eval unset '_LMFILES__modshare;
+unset' 'LOADEDMODULES_modshare;
+unset' 'MODULES_LMCONFLICT_modshare;
+unset' '_LMFILES_;
+unset' 'LOADEDMODULES;
+unset' 'MODULES_LMCONFLICT;
+test' '0;'
+++ unset _LMFILES__modshare
+++ unset LOADEDMODULES_modshare
+++ unset MODULES_LMCONFLICT_modshare
+++ unset _LMFILES_
+++ unset LOADEDMODULES
+++ unset MODULES_LMCONFLICT
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ conda activate nnUnet_2
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
++ srun nnUNet_predict -i /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/imagesTs -o /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D -t 4 -m 2d
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+using model stored in  ./nnUNet_trained_models/nnUNet/2d/Task004_SegVal_Hippocampu/nnUNetTrainerV2__nnUNetPlansv2.1
+This model expects 1 input modalities for each image
+Found 110 unique case ids, here are some examples: ['hippocampus_050' 'hippocampus_372' 'hippocampus_084' 'hippocampus_325'
+ 'hippocampus_064' 'hippocampus_141' 'hippocampus_156' 'hippocampus_156'
+ 'hippocampus_084' 'hippocampus_104']
+If they don't look right, make sure to double check your filenames. They must end with _0000.nii.gz etc
+number of cases: 110
+number of cases that still need to be predicted: 110
+emptying cuda cache
+loading parameters for folds, None
+folds is None so we will automatically look for output folders (not using 'all'!)
+found the following folds:  ['./nnUNet_trained_models/nnUNet/2d/Task004_SegVal_Hippocampu/nnUNetTrainerV2__nnUNetPlansv2.1/fold_0']
+using the following model files:  ['./nnUNet_trained_models/nnUNet/2d/Task004_SegVal_Hippocampu/nnUNetTrainerV2__nnUNetPlansv2.1/fold_0/model_final_checkpoint.model']
+starting preprocessing generator
+starting prediction...
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_001.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_023.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_011.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_024.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_044.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_019.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_014.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_020.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_026.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_046.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_064.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_036.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_033.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_038.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_048.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_067.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_084.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_053.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_050.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_060.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_068.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_087.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_101.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_074.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_070.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_077.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_090.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_104.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_123.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_097.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_094.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_098.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_105.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_125.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_141.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_107.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_106.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_108.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_132.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_155.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_169.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_136.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_133.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_138.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_001.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 51, 35) after crop: (1, 35, 51, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 35)} 
+
+normalization...
+normalization done
+(1, 35, 51, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_024.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 52, 38) after crop: (1, 33, 52, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 52, 38)} 
+
+normalization...
+normalization done
+(1, 33, 52, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_046.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 49, 36) after crop: (1, 38, 49, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 49, 36)} 
+
+normalization...
+normalization done
+(1, 38, 49, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_067.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 41, 42, 36) after crop: (1, 41, 42, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 42, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 42, 36)} 
+
+normalization...
+normalization done
+(1, 41, 42, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_087.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 32, 55, 35) after crop: (1, 32, 55, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 55, 35)} 
+
+normalization...
+normalization done
+(1, 32, 55, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_104.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 53, 35) after crop: (1, 39, 53, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 53, 35)} 
+
+normalization...
+normalization done
+(1, 39, 53, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_125.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 42, 43) after crop: (1, 39, 42, 43) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 42, 43)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 42, 43)} 
+
+normalization...
+normalization done
+(1, 39, 42, 43)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_155.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 53, 34) after crop: (1, 37, 53, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 34)} 
+
+normalization...
+normalization done
+(1, 37, 53, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_175.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 47, 33) after crop: (1, 35, 47, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 47, 33)} 
+
+normalization...
+normalization done
+(1, 35, 47, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_193.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 29, 50, 33) after crop: (1, 29, 50, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 50, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 50, 33)} 
+
+normalization...
+normalization done
+(1, 29, 50, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_216.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 49, 32) after crop: (1, 36, 49, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 32)} 
+
+normalization...
+normalization done
+(1, 36, 49, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_233.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 51, 33) after crop: (1, 37, 51, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 33)} 
+
+normalization...
+normalization done
+(1, 37, 51, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_250.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 51, 35) after crop: (1, 36, 51, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 51, 35)} 
+
+normalization...
+normalization done
+(1, 36, 51, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_274.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 40, 35) after crop: (1, 40, 40, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 40, 35)} 
+after:  preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_023.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 51, 35) after crop: (1, 35, 51, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 35)} 
+
+normalization...
+normalization done
+(1, 35, 51, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_044.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 48, 38) after crop: (1, 33, 48, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 48, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 48, 38)} 
+
+normalization...
+normalization done
+(1, 33, 48, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_064.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 53, 35) after crop: (1, 35, 53, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 53, 35)} 
+
+normalization...
+normalization done
+(1, 35, 53, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_084.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 52, 34) after crop: (1, 37, 52, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 52, 34)} 
+
+normalization...
+normalization done
+(1, 37, 52, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_101.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 32, 52, 36) after crop: (1, 32, 52, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 52, 36)} 
+
+normalization...
+normalization done
+(1, 32, 52, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_123.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 53, 32) after crop: (1, 38, 53, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 53, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 53, 32)} 
+
+normalization...
+normalization done
+(1, 38, 53, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_141.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 42, 44, 33) after crop: (1, 42, 44, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 44, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 44, 33)} 
+
+normalization...
+normalization done
+(1, 42, 44, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_169.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 45, 36) after crop: (1, 39, 45, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 45, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 45, 36)} 
+
+normalization...
+normalization done
+(1, 39, 45, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_188.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 54, 37) after crop: (1, 36, 54, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 54, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 54, 37)} 
+
+normalization...
+normalization done
+(1, 36, 54, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_212.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 56, 35) after crop: (1, 34, 56, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 56, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 56, 35)} 
+
+normalization...
+normalization done
+(1, 34, 56, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_230.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 49, 34) after crop: (1, 37, 49, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 34)} 
+
+normalization...
+normalization done
+(1, 37, 49, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_244.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 30, 53, 38) after crop: (1, 30, 53, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 53, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 53, 38)} 
+
+normalization...
+normalization done
+(1, 30, 53, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_268.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 51, 34) after crop: (1, 37, 51, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 34)} 
+
+normalization...
+normalization done
+(1, 37, 51, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_295.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 53, 35) after crop: (1, 36, 53, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 53, 35)} 
+after:  preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_011.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 31, 50, 36) after crop: (1, 31, 50, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 50, 36)} 
+
+normalization...
+normalization done
+(1, 31, 50, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_026.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 50, 36) after crop: (1, 36, 50, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 50, 36)} 
+
+normalization...
+normalization done
+(1, 36, 50, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_048.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 29, 52, 38) after crop: (1, 29, 52, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 52, 38)} 
+
+normalization...
+normalization done
+(1, 29, 52, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_068.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 43, 40, 36) after crop: (1, 43, 40, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 40, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 40, 36)} 
+
+normalization...
+normalization done
+(1, 43, 40, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_090.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 50, 37) after crop: (1, 40, 50, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 50, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 50, 37)} 
+
+normalization...
+normalization done
+(1, 40, 50, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_105.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 47, 33) after crop: (1, 37, 47, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 47, 33)} 
+
+normalization...
+normalization done
+(1, 37, 47, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_132.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 50, 36) after crop: (1, 40, 50, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 50, 36)} 
+
+normalization...
+normalization done
+(1, 40, 50, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_156.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 52, 36) after crop: (1, 36, 52, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 52, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 52, 36)} 
+
+normalization...
+normalization done
+(1, 36, 52, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_176.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 50, 35) after crop: (1, 36, 50, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 50, 35)} 
+
+normalization...
+normalization done
+(1, 36, 50, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_195.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 28, 53, 33) after crop: (1, 28, 53, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 53, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 53, 33)} 
+
+normalization...
+normalization done
+(1, 28, 53, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_222.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 49, 34) after crop: (1, 36, 49, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 34)} 
+
+normalization...
+normalization done
+(1, 36, 49, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_234.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 49, 38) after crop: (1, 36, 49, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 38)} 
+
+normalization...
+normalization done
+(1, 36, 49, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_251.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 28, 58, 36) after crop: (1, 28, 58, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 58, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 58, 36)} 
+
+normalization...
+normalization done
+(1, 28, 58, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_276.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 50, 35) after crop: (1, 33, 50, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 50, 35)} 
+after:  preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_019.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 41, 47, 36) after crop: (1, 41, 47, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 47, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 47, 36)} 
+
+normalization...
+normalization done
+(1, 41, 47, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_036.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 47, 36) after crop: (1, 39, 47, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 47, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 47, 36)} 
+
+normalization...
+normalization done
+(1, 39, 47, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_053.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 51, 37) after crop: (1, 35, 51, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 37)} 
+
+normalization...
+normalization done
+(1, 35, 51, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_074.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 42, 47, 37) after crop: (1, 42, 47, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 47, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 47, 37)} 
+
+normalization...
+normalization done
+(1, 42, 47, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_097.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 48, 37) after crop: (1, 34, 48, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 37)} 
+
+normalization...
+normalization done
+(1, 34, 48, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_107.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 55, 35) after crop: (1, 34, 55, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 55, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 55, 35)} 
+
+normalization...
+normalization done
+(1, 34, 55, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_136.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 41, 49, 34) after crop: (1, 41, 49, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 49, 34)} 
+
+normalization...
+normalization done
+(1, 41, 49, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_163.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 44, 47, 36) after crop: (1, 44, 47, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 44, 47, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 44, 47, 36)} 
+
+normalization...
+normalization done
+(1, 44, 47, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_181.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 49, 33) after crop: (1, 40, 49, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 49, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 49, 33)} 
+
+normalization...
+normalization done
+(1, 40, 49, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_203.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 49, 34) after crop: (1, 38, 49, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 49, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 49, 34)} 
+
+normalization...
+normalization done
+(1, 38, 49, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_227.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 47, 36) after crop: (1, 36, 47, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 47, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 47, 36)} 
+
+normalization...
+normalization done
+(1, 36, 47, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_242.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 52, 38) after crop: (1, 34, 52, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 38)} 
+
+normalization...
+normalization done
+(1, 34, 52, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_261.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 58, 36) after crop: (1, 33, 58, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 58, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 58, 36)} 
+
+normalization...
+normalization done
+(1, 33, 58, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_288.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 42, 50, 38) after crop: (1, 42, 50, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 50, 38)} 
+after:  preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_014.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 50, 39) after crop: (1, 40, 50, 39) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 50, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 50, 39)} 
+
+normalization...
+normalization done
+(1, 40, 50, 39)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_033.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 48, 33) after crop: (1, 38, 48, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 48, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 48, 33)} 
+
+normalization...
+normalization done
+(1, 38, 48, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_050.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 49, 38) after crop: (1, 38, 49, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 49, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 49, 38)} 
+
+normalization...
+normalization done
+(1, 38, 49, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_070.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 50, 37) after crop: (1, 38, 50, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 50, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 50, 37)} 
+
+normalization...
+normalization done
+(1, 38, 50, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_094.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 50, 38) after crop: (1, 38, 50, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 50, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 50, 38)} 
+
+normalization...
+normalization done
+(1, 38, 50, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_106.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 46, 34) after crop: (1, 38, 46, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 46, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 46, 34)} 
+
+normalization...
+normalization done
+(1, 38, 46, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_133.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 42, 41, 39) after crop: (1, 42, 41, 39) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 41, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 41, 39)} 
+
+normalization...
+normalization done
+(1, 42, 41, 39)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_162.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 51, 38) after crop: (1, 37, 51, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 38)} 
+
+normalization...
+normalization done
+(1, 37, 51, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_178.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 41, 44, 35) after crop: (1, 41, 44, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 44, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 44, 35)} 
+
+normalization...
+normalization done
+(1, 41, 44, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_199.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 26, 52, 37) after crop: (1, 26, 52, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 26, 52, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 26, 52, 37)} 
+
+normalization...
+normalization done
+(1, 26, 52, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_226.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 28, 51, 32) after crop: (1, 28, 51, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 28, 51, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 28, 51, 32)} 
+
+normalization...
+normalization done
+(1, 28, 51, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_238.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 56, 37) after crop: (1, 36, 56, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 56, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 56, 37)} 
+
+normalization...
+normalization done
+(1, 36, 56, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_260.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 29, 53, 35) after crop: (1, 29, 53, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 53, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 53, 35)} 
+
+normalization...
+normalization done
+(1, 29, 53, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_282.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 32, 52, 37) after crop: (1, 32, 52, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 52, 37)} 
+after:  preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_020.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 43, 46, 36) after crop: (1, 43, 46, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 46, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 46, 36)} 
+
+normalization...
+normalization done
+(1, 43, 46, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_038.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 51, 37) after crop: (1, 35, 51, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 51, 37)} 
+
+normalization...
+normalization done
+(1, 35, 51, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_060.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 31, 52, 39) after crop: (1, 31, 52, 39) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 52, 39)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 52, 39)} 
+
+normalization...
+normalization done
+(1, 31, 52, 39)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_077.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 45, 47, 35) after crop: (1, 45, 47, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 45, 47, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 45, 47, 35)} 
+
+normalization...
+normalization done
+(1, 45, 47, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_098.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 48, 37) after crop: (1, 34, 48, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 48, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 48, 37)} 
+
+normalization...
+normalization done
+(1, 34, 48, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_108.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 53, 36) after crop: (1, 37, 53, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 53, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 53, 36)} 
+
+normalization...
+normalization done
+(1, 37, 53, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_138.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 42, 46, 32) after crop: (1, 42, 46, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 42, 46, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 46, 32)} 
+
+normalization...
+normalization done
+(1, 42, 46, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_166.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 31, 49, 36) after crop: (1, 31, 49, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 49, 36)} 
+
+normalization...
+normalization done
+(1, 31, 49, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_184.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 51, 37) after crop: (1, 33, 51, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 51, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 51, 37)} 
+
+normalization...
+normalization done
+(1, 33, 51, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_205.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 32, 47, 32) after crop: (1, 32, 47, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 32, 47, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 47, 32)} 
+
+normalization...
+normalization done
+(1, 32, 47, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_229.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 35, 50, 33) after crop: (1, 35, 50, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 35, 50, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 35, 50, 33)} 
+
+normalization...
+normalization done
+(1, 35, 50, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_243.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 24, 53, 34) after crop: (1, 24, 53, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 24, 53, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 24, 53, 34)} 
+
+normalization...
+normalization done
+(1, 24, 53, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_265.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 54, 31) after crop: (1, 34, 54, 31) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 54, 31)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 54, 31)} 
+
+normalization...
+normalization done
+(1, 34, 54, 31)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_289.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 49, 35) after crop: (1, 36, 49, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 49, 35)} 
+after:  /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_156.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_175.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_188.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_163.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_162.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_166.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_176.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_193.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_212.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_181.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_178.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_184.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_195.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_216.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_230.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_203.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_199.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_205.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_222.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_233.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_244.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_227.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_226.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_229.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_234.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_250.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_268.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_242.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_238.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_243.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_251.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_274.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_295.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_261.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_260.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_265.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_276.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_297.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_309.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_288.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_282.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_289.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_298.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_311.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_338.nii.gz
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 53, 35)} 
+
+normalization...
+normalization done
+(1, 36, 53, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_309.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 52, 34) after crop: (1, 38, 52, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 52, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 52, 34)} 
+
+normalization...
+normalization done
+(1, 38, 52, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_338.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 43, 43, 37) after crop: (1, 43, 43, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 43, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 43, 37)} 
+
+normalization...
+normalization done
+(1, 43, 43, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_370.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 36, 50, 35) after crop: (1, 36, 50, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 36, 50, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 50, 35)} 
+
+normalization...
+normalization done
+(1, 36, 50, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_385.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 48, 35) after crop: (1, 40, 48, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 48, 35)} 
+
+normalization...
+normalization done
+(1, 40, 48, 35)
+This worker has ended successfully, no errors to report
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 40, 35)} 
+
+normalization...
+normalization done
+(1, 40, 40, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_297.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 30, 51, 34) after crop: (1, 30, 51, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 30, 51, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 30, 51, 34)} 
+
+normalization...
+normalization done
+(1, 30, 51, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_311.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 49, 37) after crop: (1, 37, 49, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 37)} 
+
+normalization...
+normalization done
+(1, 37, 49, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_353.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 31, 51, 32) after crop: (1, 31, 51, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 32)} 
+
+normalization...
+normalization done
+(1, 31, 51, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_372.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 50, 36) after crop: (1, 34, 50, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 50, 36)} 
+
+normalization...
+normalization done
+(1, 34, 50, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_386.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 45, 37) after crop: (1, 40, 45, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 45, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 45, 37)} 
+
+normalization...
+normalization done
+(1, 40, 45, 37)
+This worker has ended successfully, no errors to report
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 42, 50, 38)} 
+
+normalization...
+normalization done
+(1, 42, 50, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_302.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 46, 35) after crop: (1, 39, 46, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 46, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 46, 35)} 
+
+normalization...
+normalization done
+(1, 39, 46, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_333.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 46, 33) after crop: (1, 38, 46, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 46, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 46, 33)} 
+
+normalization...
+normalization done
+(1, 38, 46, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_361.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 50, 36) after crop: (1, 33, 50, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 50, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 50, 36)} 
+
+normalization...
+normalization done
+(1, 33, 50, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_381.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 49, 33) after crop: (1, 37, 49, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 49, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 49, 33)} 
+
+normalization...
+normalization done
+(1, 37, 49, 33)
+This worker has ended successfully, no errors to report
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 32, 52, 37)} 
+
+normalization...
+normalization done
+(1, 32, 52, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_299.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 54, 32) after crop: (1, 34, 54, 32) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 54, 32)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 54, 32)} 
+
+normalization...
+normalization done
+(1, 34, 54, 32)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_326.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 41, 49, 36) after crop: (1, 41, 49, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 41, 49, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 41, 49, 36)} 
+
+normalization...
+normalization done
+(1, 41, 49, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_356.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 37, 51, 36) after crop: (1, 37, 51, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 37, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 37, 51, 36)} 
+
+normalization...
+normalization done
+(1, 37, 51, 36)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_378.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 52, 35) after crop: (1, 34, 52, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 52, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 52, 35)} 
+
+normalization...
+normalization done
+(1, 34, 52, 35)
+This worker has ended successfully, no errors to report
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 50, 35)} 
+
+normalization...
+normalization done
+(1, 33, 50, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_298.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 33, 50, 37) after crop: (1, 33, 50, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 33, 50, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 33, 50, 37)} 
+
+normalization...
+normalization done
+(1, 33, 50, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_325.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 40, 51, 35) after crop: (1, 40, 51, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 40, 51, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 40, 51, 35)} 
+
+normalization...
+normalization done
+(1, 40, 51, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_355.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 47, 33) after crop: (1, 38, 47, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 47, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 47, 33)} 
+
+normalization...
+normalization done
+(1, 38, 47, 33)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_374.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 39, 48, 38) after crop: (1, 39, 48, 38) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 39, 48, 38)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 39, 48, 38)} 
+
+normalization...
+normalization done
+(1, 39, 48, 38)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_393.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 31, 51, 36) after crop: (1, 31, 51, 36) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 31, 51, 36)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 31, 51, 36)} 
+
+normalization...
+normalization done
+(1, 31, 51, 36)
+This worker has ended successfully, no errors to report
+{'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 36, 49, 35)} 
+
+normalization...
+normalization done
+(1, 36, 49, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_303.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 38, 48, 35) after crop: (1, 38, 48, 35) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 38, 48, 35)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 38, 48, 35)} 
+
+normalization...
+normalization done
+(1, 38, 48, 35)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_336.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 43, 47, 34) after crop: (1, 43, 47, 34) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 43, 47, 34)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 43, 47, 34)} 
+
+normalization...
+normalization done
+(1, 43, 47, 34)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_366.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 34, 47, 37) after crop: (1, 34, 47, 37) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 34, 47, 37)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 34, 47, 37)} 
+
+normalization...
+normalization done
+(1, 34, 47, 37)
+preprocessing /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_383.nii.gz
+using preprocessor PreprocessorFor2D
+before crop: (1, 29, 55, 33) after crop: (1, 29, 55, 33) spacing: [1. 1. 1.] 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([1., 1., 1.]), 'spacing_transposed': array([1., 1., 1.]), 'data.shape (data is transposed)': (1, 29, 55, 33)} 
+after:  {'spacing': array([1., 1., 1.]), 'data.shape (data is resampled)': (1, 29, 55, 33)} 
+
+normalization...
+normalization done
+(1, 29, 55, 33)
+This worker has ended successfully, no errors to report
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+force_separate_z: None interpolation order: 1
+no resampling necessary
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_302.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_299.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_303.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_325.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_353.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_370.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_333.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_326.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_336.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_355.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_372.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_385.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_361.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_356.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_366.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_374.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_386.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_381.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_378.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_383.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+predicting /gpfswork/rech/pzi/uju59ys/nnUNet/nnUNet_raw_data_base/nnUNet_raw_data/Task004_SegVal_Hippocampu/predict_2D/hippocampus_393.nii.gz
+debug: mirroring True mirror_axes (0, 1)
+inference done. Now waiting for the segmentation export to finish...
+WARNING! Cannot run postprocessing because the postprocessing file is missing. Make sure to run consolidate_folds in the output folder of the model first!
+The folder you need to run this in is ./nnUNet_trained_models/nnUNet/2d/Task004_SegVal_Hippocampu/nnUNetTrainerV2__nnUNetPlansv2.1
++ wait

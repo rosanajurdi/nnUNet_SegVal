@@ -288,7 +288,7 @@ class nnUNetTrainerV2(nnUNetTrainer):
         else:
             splits_file = join(self.dataset_directory, "splits_final.pkl")
             print("ROSANA:")
-            print(self.dataset_directory)
+            print("Splits_final.pkl", os.path.exists(self.dataset_directory))
 
             # if the split file does not exist we need to create it
             if not isfile(splits_file):
@@ -333,10 +333,7 @@ class nnUNetTrainerV2(nnUNetTrainer):
         val_keys.sort()
         self.dataset_tr = OrderedDict()
         for i in tr_keys:
-            print("ROSANA:self.dataset_tr[i]")
-            print(self.dataset_tr[i])
-            print("ROSANA:self.dataset[i]")
-            print(self.dataset[i])
+            print(i)
             self.dataset_tr[i] = self.dataset[i]
         self.dataset_val = OrderedDict()
         for i in val_keys:
